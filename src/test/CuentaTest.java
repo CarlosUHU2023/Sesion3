@@ -23,6 +23,7 @@ class CuentaTest {
 		aux=new Cuenta("1","Carlos",0); 
 		c12345=new Cuenta("12345", "Pepe", 50);
 		c67890=new Cuenta("67890", "Juan", 0);
+		movimiento=new Movimiento(200,"Ingreso");
 	}
 
 	@AfterAll
@@ -61,7 +62,7 @@ class CuentaTest {
 	@Test
 	void test0014() {
 		c12345.retirar(200);
-		assertEquals(200, c67890.getMovimietno(1));
+		assertEquals(movimiento.getImporte(), c12345.getMovimietno(1).getImporte());
 		c67890.retirar(350);
 		c12345.ingresar(100);
 		c67890.retirar(200);
