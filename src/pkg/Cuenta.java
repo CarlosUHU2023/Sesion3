@@ -3,13 +3,17 @@ package pkg;
 public class Cuenta {
 	
 	private double Saldo;
+	private String numero;
+	private String titular;
 	
 	public Cuenta(String numero, String titular,double saldo) {
-		Saldo = saldo;
+		this.Saldo = saldo;
+		this.numero=numero;
+		this.titular=titular;
 	}
 
 	public double getSaldo() {
-		return 10;
+		return Saldo;
 	}
 
 	public void setSaldo(int saldo) {
@@ -17,12 +21,12 @@ public class Cuenta {
 	}
 
 	public void ingresar(int i) {
-
+		Saldo=Saldo+i;
 	}
 
-	public static Integer retirar(int i) {
+	public void retirar(int i) {
 		
-		return null;
+		Saldo=Saldo-i;
 	}
 
 }
