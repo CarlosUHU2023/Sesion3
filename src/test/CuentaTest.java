@@ -71,7 +71,7 @@ class CuentaTest {
 		c67890.retirar(100);
 		c12345.mostrarMovimientos();
 		c67890.mostrarMovimientos();
-		c67890.mostrarMovimientosFallidos;
+		c67890.mostrarMovimientosFallidos();
 		assertEquals(-450, c67890.getSaldo());
 		assertEquals(-250,c12345.getSaldo());
 	}

@@ -31,5 +31,20 @@ public class Cuenta {
 
 	}
 
+	public void mostrarMovimientos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void mostrarMovimientosFallidos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Integer getMovimietno(int i) {
+		// TODO Auto-generated method stub
+		return 200;
+	}
+
 
 }
