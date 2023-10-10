@@ -5,7 +5,7 @@ public class Cuenta {
 	private double Saldo;
 	private String numero;
 	private String titular;
-	
+
 	
 	public Cuenta(String numero, String titular,double saldo) {
 		this.Saldo = saldo;
@@ -26,9 +26,10 @@ public class Cuenta {
 	}
 
 	public void retirar(int i) {
-		if(i<=Saldo)
+		if(i<=(Saldo+500))
 			Saldo=Saldo-i;
 
 	}
+
 
 }
